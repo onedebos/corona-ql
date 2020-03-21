@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cases: 1
+  cases_today: MyString
+  integer: MyString
+  total_deaths: 1
+  deaths_today: 1
+  recovered: 1
+  active: 1
+  critical: 1
+
+two:
+  cases: 1
+  cases_today: MyString
+  integer: MyString
+  total_deaths: 1
+  deaths_today: 1
+  recovered: 1
+  active: 1
+  critical: 1

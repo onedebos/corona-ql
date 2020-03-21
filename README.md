@@ -1,7 +1,7 @@
 # Project Name
 
 > This is a tracker for the #COVID-19 / Coronavirus built in Rails
-> with GraphQL endpoints. You can use this tracker to supply data > to your apps.
+> with GraphQL endpoints. You can use this tracker to supply data to your apps.
 
 ![screenshot](./screenshot.png)
 
@@ -10,10 +10,61 @@
 - Rails
 - GraphQL
 - GraphiQL
+- HTTParty
 
-## Live Demo
+## Live Demo/GraphiQL playground
 
 [Live Demo Link](https://corona-ql.herokuapp.com/graphiql)
+
+## API Endpoints
+
+- To get details on all the countries. This query includes all the possible fields. NB: This may take some time to run.
+
+```
+query{
+  allCountries{
+    cases,
+    casesToday,
+    deaths,
+    deathsToday,
+    recovered,
+    active,
+    critical
+  }
+}
+
+```
+
+- To find information about a specific country.
+
+```
+query{
+  findCountry(countryName: "Nigeria"){
+    casesToday,
+    deaths,
+    deathsToday,
+    recovered
+  }
+}
+```
+
+- For a concise summary
+
+```
+query{
+    summaries{
+        totalCases,
+        totalDeaths,
+        totalRecovered
+    }
+}
+```
+
+- To query this API from a frontend App, make a POST request in the following format. In development, use localhost:3000
+
+```
+http://corona-ql.herokuapp.com/graphql?query={ summaries {totalCases, totalDeaths, totalRecovered}}
+```
 
 ## Getting Started
 
