@@ -96,6 +96,8 @@ rails s
 http://localhost:3000/graphiql
 ```
 
+- If you're cloning this to use locally, you would have to manually set the link_name of some countries using the rails console. Find a link to the countries here.
+
 ### Prerequisites
 
 - Rails 6
