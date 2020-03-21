@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://awesome-kare-c984ee.netlify.com/)
+[Live Demo Link](https://corona-ql.herokuapp.com/graphiql)
 
 ## Getting Started
 
