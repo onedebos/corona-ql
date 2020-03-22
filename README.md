@@ -18,11 +18,12 @@
 
 ## API Endpoints
 
-- To get details on all the countries. This query includes all the possible fields. NB: This may take some time to run.
+- To return each country(in ascending order) in the db, use the query below. This query includes all the possible fields.
 
 ```
 query{
   allCountries{
+    countryName,
     cases,
     casesToday,
     deaths,
@@ -32,7 +33,34 @@ query{
     critical
   }
 }
+```
 
+- To perform a wildcard search through the records, use the text argument in the countryFilter query.
+
+```
+query{
+  countryFilter(text: "NIG"){
+    countryName,
+    deaths
+  }
+}
+```
+
+- The query below will return 10 records starting from the first record. These are also the default values for the per_page and start arguments.
+
+```
+query{
+  allCountriesLimit(perPage:10, start:1){
+    countryName,
+    cases,
+    casesToday,
+    deaths,
+    deathsToday,
+    recovered,
+    active,
+    critical
+  }
+}
 ```
 
 - To find information about a specific country.
