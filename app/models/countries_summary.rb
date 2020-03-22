@@ -1,0 +1,2 @@
+class CountriesSummary < ApplicationRecord
+end
