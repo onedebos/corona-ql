@@ -1,7 +1,6 @@
 # Project Name
 
-> This is a tracker for the #COVID-19 / Coronavirus built in Rails
-> with GraphQL endpoints. You can use this tracker to supply data to your apps.
+> This is a live tracker for #COVID-19 / Coronavirus cases worldwide. This tracker is built on Rails with GraphQL endpoints. You can use this tracker to supply data to your web/mobile apps.
 
 ![screenshot](./screenshot.png)
 
@@ -41,7 +40,7 @@ query{
 query{
   countryFilter(text: "NIG"){
     countryName,
-    deaths
+    cases
   }
 }
 ```
@@ -80,7 +79,7 @@ query{
 
 ```
 query{
-    summaries{
+    summary{
         totalCases,
         totalDeaths,
         totalRecovered

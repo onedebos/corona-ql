@@ -1,6 +1,6 @@
 module Types
   class QueryType < Types::BaseObject
-    field :summaries, [Types::SummaryType], null: false
+    field :summary, [Types::SummaryType], null: false
     field :all_countries, [Types::CountryType], null: false
     field :find_country, [CountryType], null: true do
       argument :country_name, String, required: true
@@ -26,10 +26,7 @@ module Types
       Country.where("country_name LIKE ?", "%#{text.downcase}%")
     end
 
-
-
-
-    def summaries
+    def summary
       Summary.all
     end
 
