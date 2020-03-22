@@ -45,7 +45,13 @@ def get_countries
     update_link_name("Sint Maarten", "sint")
     update_link_name("Timor-Leste", "timor")
     update_link_name("New Zealand", "new")
+    update_link_name("Hong Kong", "hong")
+    update_link_name("Réunion", "union")
+    update_link_name("Curaçao", "cura")
+    update_link_name("Isle of man", "isle")
+    
 end
+
 
 def update_link_name(country_name, new_link)
     country_name = country_name.downcase

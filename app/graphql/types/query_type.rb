@@ -19,5 +19,7 @@ module Types
       country_name = country_name.downcase
       Country.where(country_name: country_name)
     end
+
+
   end
 end

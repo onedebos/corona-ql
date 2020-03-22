@@ -60,7 +60,7 @@ query{
 }
 ```
 
-- To query this API from a frontend App, make a POST request in the following format. In development, use localhost:3000
+- To query this API from a frontend App, make a POST request in the following format. In development, use localhost:3000 instead of the URL below.
 
 ```
 http://corona-ql.herokuapp.com/graphql?query={ summaries {totalCases, totalDeaths, totalRecovered}}
@@ -84,6 +84,18 @@ git clone https://github.com/onedebos/corona-ql.git
 bundle install
 ```
 
+- create and migrate the db
+
+```
+rails db:create db:migrate
+```
+
+- run the seed file
+
+```
+rails db:seed
+```
+
 - run the rails server on port 3001
 
 ```
@@ -95,8 +107,6 @@ rails s
 ```
 http://localhost:3000/graphiql
 ```
-
-- If you're cloning this to use locally, you would have to manually set the link_name of some countries using the rails console. Find a link to the countries here.
 
 ### Prerequisites
 

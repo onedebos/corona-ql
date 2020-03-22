@@ -11,7 +11,7 @@ module Types
    field :active, Integer, null: false
    field :critical, Integer, null: false
    field :last_updated_at, Integer, null: false
-   #try getting all countries with /countries endpoint
+   
   def request
     base_url = "https://corona.lmao.ninja/countries/#{object.link_name}"
     request = HTTParty.get(base_url).body
