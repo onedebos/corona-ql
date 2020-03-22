@@ -1,2 +1,0 @@
-class CountriesSummary < ApplicationRecord
-end
