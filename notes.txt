@@ -1,2 +1,0 @@
-noteground app to take notes and store in browser
-jamstack.training for gatsby
