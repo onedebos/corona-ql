@@ -1,4 +1,4 @@
-# Project Name
+# CoronaQL
 
 > This is a live tracker for #COVID-19 / Coronavirus cases worldwide. This tracker is built on Rails with GraphQL endpoints. You can use this tracker to supply data to your web/mobile apps.
 
@@ -13,7 +13,7 @@
 
 ## Live Demo/GraphiQL playground
 
-[Live Demo Link](https://corona-ql.herokuapp.com/graphiql)
+[GraphiQL playground](https://corona-ql.herokuapp.com/graphiql)
 
 ## API Endpoints
 
