@@ -4,6 +4,9 @@
 
 ![screenshot](./screenshot.png)
 
+## Video demo
+![](./corona-ql.gif)
+
 ## Built With
 
 - Rails
