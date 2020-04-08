@@ -140,6 +140,12 @@ http://localhost:3000/graphiql
 - Rails 6
 - Ruby 2.5.1
 
+### Automated Tests
+- Currently, there are no automated tests avaailable for this project. This will be implemented at a later date.
+
+## Planned Features
+- API should receive data from the WorldOmeters website directly. 
+
 ## Authors
 
 👤 **Adebola**
